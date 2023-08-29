@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+    align-items: center;
+}
+
+.logo {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.7%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.navigation li {
+    margin: 0 10px;
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.7%;
+}
+
+.cta-button {
+    width: 117px;
+    height: 45px;
+    flex-shrink: 0;
+    background: #71D398;
+    color: #FFF;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.7%;
+
+    border-radius: 5px;
+    cursor: pointer;
+    outline: auto;
+}

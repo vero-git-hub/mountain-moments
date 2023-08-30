@@ -3,9 +3,9 @@ import Header from "./Header";
 import MainBanner from "./MainBanner";
 import './FirstScreen.css';
 
-const FirstScreen = () => (
+const FirstScreen = ({ isModalOpen, setModalOpen }) => (
     <div className="first-screen">
-        <Header />
+        <Header isModalOpen={isModalOpen} setModalOpen={setModalOpen}/>
         <MainBanner />
     </div>
 );

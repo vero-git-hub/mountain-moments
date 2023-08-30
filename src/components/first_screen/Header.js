@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => (
+const Header = ({ isModalOpen, setModalOpen }) => (
     <header className="header">
         <div className="logo">Mountaintop Moments</div>
         <nav className="navigation">
@@ -12,7 +12,7 @@ const Header = () => (
                 <li><img src = "/separator.svg" alt="Separator"/></li>
                 <li><a href="#packages">Packages</a></li>
             </ul>
-            <button className="cta-button">Contact</button>
+            <button className="cta-button" onClick={() => setModalOpen(!isModalOpen)}>Contact</button>
         </nav>
     </header>
 );

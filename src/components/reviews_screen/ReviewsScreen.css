@@ -4,10 +4,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 25px 100px;
 }
 
 h2 {
     margin-bottom: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
 }
 
 .slider {
@@ -18,18 +37,27 @@ h2 {
 }
 
 .slide {
-    min-width: 200px;
     display: flex;
+    width: 276px;
+    padding: 0 1px 43px 0;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 43px;
+    border-radius: 5px;
+    background: #71D398;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
+    width: 275px;
+    height: 160px;
 }
 
 .slide p {
-    margin-top: 10px;
+    width: 238px;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
 }

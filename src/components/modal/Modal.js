@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Modal.css';
+import ThankYouMessage from './ThankYouMessage';
+import ContactFormModal from './ContactFormModal';
 
 const Modal = ({ isOpen, onClose }) => {
+	const [isSubmitted, setSubmitted] = useState(false);
+
+	const handleSubmit = () => {
+		setSubmitted(true);
+	};
+
+	const handleOk = () => {
+		setSubmitted(false);
+		onClose();
+	};
+
 	if (!isOpen) {
 		return null;
 	}
@@ -12,16 +25,11 @@ const Modal = ({ isOpen, onClose }) => {
 				<span className="close-button" onClick={onClose}>
 				  &times;
 				</span>
-				<h2>Contact Form</h2>
-				<div className="form-row">
-					<label htmlFor="name">Name</label>
-					<input type="text" id="name" />
-				</div>
-				<div className="form-row">
-					<label htmlFor="phone">Phone</label>
-					<input type="text" id="phone" />
-				</div>
-				<button className="submit-button">Submit</button>
+				{ !isSubmitted ? (
+					<ContactFormModal onSubmit={handleSubmit} />
+				) : (
+					<ThankYouMessage onClose={handleOk} />
+				)}
 			</div>
 		</div>
 	);

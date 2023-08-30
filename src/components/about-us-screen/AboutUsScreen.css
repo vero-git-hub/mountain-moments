@@ -1,0 +1,56 @@
+.about-us-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: url("/public/img/about-us/background.png") no-repeat center center, rgba(211, 211, 211, 0.5);
+    background-size: cover;
+}
+
+h2 {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-box {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 150px;
+}
+
+.image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: white;
+}
+
+.image-grid img {
+    width: 120px;
+    height: 100px;
+}
+
+.text-box {
+    width: 374px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}

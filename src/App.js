@@ -1,11 +1,8 @@
 import './App.css';
 import React, {useState} from 'react';
-import FirstScreen from "./components/first_screen/FirstScreen";
+import FirstScreen from "./components/first-screen/FirstScreen";
 import ReviewsScreen from "./components/reviews_screen/ReviewsScreen";
-import AboutUs from './components/AboutUs';
-import Packages from './components/Packages';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
+import AboutUsScreen from "./components/about-us-screen/AboutUsScreen";
 import Modal from './components/modal/Modal';
 
 const App = () => {
@@ -15,11 +12,7 @@ const App = () => {
         <div className="app">
             <FirstScreen isModalOpen={isModalOpen} setModalOpen={setModalOpen}/>
             <ReviewsScreen />
-            <AboutUs/>
-            <Packages/>
-            <ContactForm/>
-            <Footer/>
-
+            <AboutUsScreen />
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
         </div>
     );

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import './ReviewsScreen.css';
+import './Reviews.css';
 import ReviewCard from './ReviewCard';
 
-const ReviewsScreen = () => {
+const Reviews = () => {
 	const sliderRef = useRef(null);
 
 	const scroll = (direction) => {
@@ -62,4 +62,4 @@ const ReviewsScreen = () => {
 	);
 };
 
-export default ReviewsScreen;
+export default Reviews;

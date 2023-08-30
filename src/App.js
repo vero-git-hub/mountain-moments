@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
 import FirstScreen from "./components/first_screen/FirstScreen";
+import ReviewsScreen from "./components/reviews_screen/ReviewsScreen";
 import Slider from './components/Slider';
 import AboutUs from './components/AboutUs';
 import Packages from './components/Packages';
@@ -14,7 +15,7 @@ const App = () => {
     return (
         <div className="app">
             <FirstScreen isModalOpen={isModalOpen} setModalOpen={setModalOpen}/>
-            <Slider/>
+            <ReviewsScreen />
             <AboutUs/>
             <Packages/>
             <ContactForm/>

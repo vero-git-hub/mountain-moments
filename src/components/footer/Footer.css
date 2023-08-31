@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.social-icons img {
+    padding-right: 5px;
+}

@@ -17,15 +17,13 @@ const AboutUs = () => {
 			<h2>About Us</h2>
 			<div className="about-us-content">
 				<div className="text-box">
-					<p>
-						Mountaintop Moments - is a...
-						<ul>
-							<li>Majestic mountain scenery.</li>
-							<li>Comfortable chalets or cottages for living.</li>
-							<li>Activities available to tourists: skiing, snowmobiling, trekking, etc.</li>
-						</ul>
-						You will have something to remember!
-					</p>
+					<p>Mountaintop Moments - is a...</p>
+					<ul>
+						<li>Majestic mountain scenery.</li>
+						<li>Comfortable chalets or cottages for living.</li>
+						<li>Activities available to tourists: skiing, snowmobiling, trekking, etc.</li>
+					</ul>
+					You will have something to remember!
 				</div>
 				<div className="image-grid">
 					<img src="/img/about-us/red-house.jpg" alt="Image 1" onClick={() => openLightbox("/img/about-us/red-house.jpg")}/>

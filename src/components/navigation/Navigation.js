@@ -2,7 +2,7 @@ import React from 'react';
 import './Navigation.css';
 import CTAButton from "../button/CTAButton";
 
-const Navigation = (setModalOpen) => {
+const Navigation = ({setModalOpen}) => {
     return (
         <nav className="navigation">
             <ul>

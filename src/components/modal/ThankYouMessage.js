@@ -4,7 +4,7 @@ const ThankYouMessage = ({ onClose }) => (
 	<>
 		<h2>Thank you!</h2>
 		<p>The message has been sent, please wait for a call from the manager.</p>
-		<button className="submit-button" onClick={onClose}>Ok</button>
+		<button className="submit-button cta-button" onClick={onClose}>Ok</button>
 	</>
 );
 

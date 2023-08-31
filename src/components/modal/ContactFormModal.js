@@ -3,15 +3,15 @@ import React from 'react';
 const ContactFormModal = ({ onSubmit }) => (
 	<>
 		<h2>Contact Form</h2>
-		<div className="form-row">
-			<label htmlFor="name">Name</label>
-			<input type="text" id="name" />
+		<div className="form-group">
+			<label className="label" htmlFor="name">Name</label>
+			<input className="input" type="text" id="name" name="name" required />
 		</div>
-		<div className="form-row">
-			<label htmlFor="phone">Phone</label>
-			<input type="text" id="phone" />
+		<div className="form-group">
+			<label className="label" htmlFor="phone">Phone</label>
+			<input className="input" type="tel" id="phone" name="phone" required />
 		</div>
-		<button className="submit-button" onClick={onSubmit}>Submit</button>
+		<button className="submit-button cta-button" onClick={onSubmit}>Submit</button>
 	</>
 );
 

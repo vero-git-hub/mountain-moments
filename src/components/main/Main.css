@@ -1,0 +1,13 @@
+:root {
+    --black: #1B1D1F;
+}
+
+.main {
+    background: rgba(211, 211, 211, 0.5) url("/public/img/first-screen/mountains_1920.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+

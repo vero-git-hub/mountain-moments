@@ -12,7 +12,7 @@ const Reviews = () => {
 	};
 
 	return (
-		<div className="reviews-screen">
+		<div className="reviews" id="reviews">
 			<h2>Summit Stories</h2>
 			<button className="arrow arrow-left" onClick={() => scroll('left')}>&lt;</button>
 			<div className="slider" ref={sliderRef}>

@@ -1,6 +1,7 @@
 import React from 'react';
+import './Banner.css';
 
-const MainBanner = () => (
+const Banner = () => (
     <div className="main-banner">
         <div className="main-banner-container">
             <div className="main-banner-title">Reach the top</div>
@@ -11,8 +12,7 @@ const MainBanner = () => (
                 daily routine and make your vacation better with us.
             </div>
         </div>
-
     </div>
 );
 
-export default MainBanner;
+export default Banner;

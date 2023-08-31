@@ -13,7 +13,7 @@ const AboutUs = () => {
 	};
 
 	return (
-		<div className="about-us-screen">
+		<div className="about-us" id="about-us">
 			<h2>About Us</h2>
 			<div className="about-us-content">
 				<div className="text-box">

@@ -2,7 +2,7 @@ import React from 'react';
 import './Packages.css';
 
 const Packages = ({ setModalOpen }) => (
-	<div className="packages-screen">
+	<div className="packages" id="packages">
 		<h2>Packages</h2>
 		<div className="packages-content">
 			<div className="package-box">

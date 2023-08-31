@@ -6,6 +6,7 @@ import AboutUs from "./components/about-us/AboutUs";
 import Packages from "./components/packages/Packages";
 import Footer from "./components/footer/Footer";
 import Modal from './components/modal/Modal';
+import ScrollToTopButton from './components/buttons/ScrollToTopButton';
 
 const App = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
             <Packages setModalOpen={setModalOpen}/>
             <Footer setModalOpen={setModalOpen} />
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+            <ScrollToTopButton />
         </div>
     );
 };

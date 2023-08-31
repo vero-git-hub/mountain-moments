@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: var(--black, #1B1D1F);
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}

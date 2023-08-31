@@ -4,7 +4,7 @@ import './Banner.css';
 const Banner = () => (
     <div className="main-banner">
         <div className="main-banner-container">
-            <div className="main-banner-title">Reach the top</div>
+            <h1>Reach the top</h1>
             <div className="main-banner-description">
                 Mountaintop Moments offers an unforgettable weekend in majestic mountain scenery.
                 Enjoy luxurious accommodations, breathtaking views and plenty of outdoor activities

@@ -8,13 +8,8 @@
     background-size: cover;
 }
 
-h2 {
+.about-us h2 {
     color: #FFF;
-    font-family: Montserrat, sans-serif;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 48px;
 }
 
 .about-us-content {

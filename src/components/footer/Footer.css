@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    background-color: #E8E8E8;
+    padding: 25px 100px;
 }
 
 .footer-left {
@@ -10,16 +11,30 @@
     align-items: center;
 }
 
-.footer-logo {
-    margin-right: 10px;
-    text-decoration: none;
-    font-weight: bold;
+.copyright {
+    margin-left: 15px;
+    color: var(--black);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .footer-right {
     display: flex;
     align-items: center;
     gap: 42px;
+}
+
+.phone {
+    text-decoration: none;
+    color: var(--black);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .social-icons img {

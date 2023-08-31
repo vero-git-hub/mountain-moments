@@ -15,15 +15,6 @@
     margin-top: 83px;
 }
 
-.main-banner-title {
-    color: var(--black, #1B1D1F);
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
 .main-banner-description {
     color: var(--black, #1B1D1F);
     font-family: "Montserrat", sans-serif;

@@ -5,8 +5,12 @@ import './Main.css';
 
 const Main = ({ isModalOpen, setModalOpen }) => (
     <div className="main">
-        <Header isModalOpen={isModalOpen} setModalOpen={setModalOpen}/>
-        <Banner />
+        <div className="header-container">
+            <Header isModalOpen={isModalOpen} setModalOpen={setModalOpen}/>
+        </div>
+        <div className="banner-container">
+            <Banner />
+        </div>
     </div>
 );
 

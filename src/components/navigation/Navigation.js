@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.css';
-import CTAButton from "../button/CTAButton";
+import CTAButton from "../buttons/CTAButton";
 
 const Navigation = ({setModalOpen}) => {
     return (

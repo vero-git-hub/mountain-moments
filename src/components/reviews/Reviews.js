@@ -7,21 +7,21 @@ const Reviews = () => {
 	const sliderRef = useRef(null);
 	const totalSlides = 8;
 	const slidesPerPage = 4;
-	const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Augue mauris augue neque gravida. Tincidunt id aliquet risus feugiat in ante metus dictum. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Sit amet nisl purus in mollis nunc sed.";
+	const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Augue mauris augue neque gravida. Tincidunt id aliquet risus feugiat in ante metus dictum.";
 	const signature = "Rhoncus, aenean";
 
 	const scroll = (direction) => {
 		if (sliderRef.current) {
 			const slideWidth = 245;
-			const gap = 20;
+			const gap = 25;
 			const numberOfSlidesToScroll = 4;
 			const offset = (slideWidth + gap) * numberOfSlidesToScroll;
 
-			const newIndex = direction === 'left' ? Math.max(0, currentIndex - slidesPerPage) : Math.min(totalSlides - slidesPerPage, currentIndex + slidesPerPage);
+			const newIndex = direction === 'left' ? Math.max(0, currentIndex - numberOfSlidesToScroll) : Math.min(totalSlides - numberOfSlidesToScroll, currentIndex + numberOfSlidesToScroll);
 			setCurrentIndex(newIndex);
 
 			sliderRef.current.style.transition = 'all 0.5s ease-in-out';
-			sliderRef.current.scrollLeft += direction === 'left' ? -offset : offset;
+			sliderRef.current.scrollLeft = newIndex * (slideWidth + gap);
 
 			setTimeout(() => {
 				sliderRef.current.style.transition = 'none';

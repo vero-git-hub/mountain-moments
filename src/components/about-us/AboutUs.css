@@ -1,15 +1,19 @@
 .about-us {
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
-    background: url("/public/img/about-us/background.png") no-repeat center center, rgba(211, 211, 211, 0.5);
+    justify-content: flex-start;
+    padding: 20px 100px;
+    background: url("/public/img/about-us/wintry_1920.jpg") no-repeat center center, rgba(211, 211, 211, 0.5);
     background-size: cover;
 }
 
 .about-us h2 {
     color: #FFF;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .about-us-content {
@@ -18,28 +22,19 @@
     width: 100%;
 }
 
-.text-box {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin-right: 150px;
-}
-
 .image-grid {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 30px;
     background-color: white;
-    width: 490px;
-    height: 270px;
     flex-shrink: 0;
+    padding: 20px;
 }
 
 .image-grid img {
-    width: 120px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
 }
 
 .image-grid img:hover {
@@ -47,14 +42,17 @@
 }
 
 .text-box {
-    width: 374px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-right: 150px;
+    color: var(--black, #1B1D1F);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0 20px;
 }
 
 .lightbox {

@@ -24,6 +24,9 @@ const AboutUs = () => {
 						<li>Activities available to tourists: skiing, snowmobiling, trekking, etc.</li>
 					</ul>
 					You will have something to remember!
+					<p>
+						Elit at imperdiet dui accumsan sit amet nulla facilisi. Et leo duis ut diam quam nulla porttitor. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Orci a scelerisque purus semper eget duis at tellus at. Dolor sit amet consectetur adipiscing elit pellentesque. Senectus et netus et malesuada fames ac. Ut morbi tincidunt augue interdum velit euismod. Tellus cras adipiscing enim eu turpis egestas pretium aenean. In hendrerit gravida rutrum quisque non tellus orci. Turpis massa sed elementum tempus egestas sed sed risus.
+					</p>
 				</div>
 				<div className="image-grid">
 					<img src="/img/about-us/red-house.jpg" alt="Image 1" onClick={() => openLightbox("/img/about-us/red-house.jpg")}/>

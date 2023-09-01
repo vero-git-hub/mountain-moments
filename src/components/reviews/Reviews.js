@@ -7,11 +7,12 @@ const Reviews = () => {
 	const sliderRef = useRef(null);
 	const totalSlides = 8;
 	const slidesPerPage = 4;
-
+	const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Augue mauris augue neque gravida. Tincidunt id aliquet risus feugiat in ante metus dictum. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Sit amet nisl purus in mollis nunc sed.";
+	const signature = "Rhoncus, aenean";
 
 	const scroll = (direction) => {
 		if (sliderRef.current) {
-			const slideWidth = 276;
+			const slideWidth = 245;
 			const gap = 20;
 			const numberOfSlidesToScroll = 4;
 			const offset = (slideWidth + gap) * numberOfSlidesToScroll;
@@ -37,42 +38,50 @@ const Reviews = () => {
 					<ReviewCard
 						img="/img/slider/woman.jpg"
 						alt="Review 1"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/people.jpg"
 						alt="Review 2"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/sky.jpg"
 						alt="Review 3"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/mountaineers.jpg"
 						alt="Review 4"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/woman.jpg"
 						alt="Review 5"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/people.jpg"
 						alt="Review 6"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/sky.jpg"
 						alt="Review 7"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 					<ReviewCard
 						img="/img/slider/mountaineers.jpg"
 						alt="Review 8"
-						text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+						text={text}
+						signature={signature}
 					/>
 				</div>
 				<button className="arrow arrow-right" onClick={() => scroll('right')}>&gt;</button>

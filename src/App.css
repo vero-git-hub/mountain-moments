@@ -45,3 +45,12 @@ h1, h2 {
   font-weight: 600;
   line-height: 1.2;
 }
+
+h3 {
+  color: var(--black, #1B1D1F);
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
